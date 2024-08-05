@@ -1,0 +1,112 @@
+.Orthogard {
+  height: 110vh;
+}
+
+.Orthogard .front{
+  display: flex;
+  flex-direction: row;
+}
+
+.Orthogard .information {
+  width: 50%;
+  height: 90vh;
+  text-align: center;
+  color: #008655;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Orthogard .information h1 {
+  margin: 0;
+  font-family: "HeavyItalic";
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.Orthogard .information h4 {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+
+.Orthogard .btnAcction {
+  width: 100%;
+  height: 80px;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* background: wheat; */
+}
+
+.Orthogard .btnAcction .icon.circle {
+  width: 15%;
+  font-size: 3rem;
+}
+
+.Orthogard .btnAcction button.btn {
+  width: 60px;
+  height: 60px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 2px solid #008655;
+  background: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Heavy";
+  color: #008655;
+}
+
+.Orthogard .btnAcction p {
+  width: 70%;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.Orthogard span.text-header {
+  font-weight: bold;
+  font-family: "Bold";
+}
+
+.Orthogard span.text-body {
+  font-family: "Light";
+}
+
+.Orthogard .footer {
+  width: 60%;
+  height: 10vh;
+  text-align: center;
+  margin: 0 auto;
+  color: #757575;
+  font-family: "Light";
+}
+
+.footer p {
+  font-size: .8rem;
+}
+
+.vl {
+  border-left: 3px solid #008655;
+  position: absolute;
+  margin-left: -3px;
+  left: 2.75rem;
+}
+
+.line1 {
+  height: 80px;
+  top: 17.5rem;
+}
+
+.line2 {
+  height: 100px;
+  top: 24rem;
+}
+
+.OrthogardVideo .animation .animation-3d {
+  position: absolute !important;
+  top: 300vh;
+}
