@@ -1,20 +1,73 @@
 .Orthogard {
-  height: 110vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.Orthogard .front{
+.Orthogard .titulo {
+  width: 100%;
+  margin-top: 3rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  color: #008655;
+}
+
+.Orthogard .titulo .accion h1 {
+  margin: 0;
+  font-family: "HeavyItalic";
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.Orthogard .titulo .accion h4 {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+
+.Orthogard .titulo .nombre {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+}
+
+.Orthogard .titulo .nombre h4 {
+  margin: 0;
+  font-family: "Light";
+  font-size: 1rem;
+}
+
+.Orthogard .titulo .nombre h1 {
+  margin: 0;
+  font-family: "Light";
+  font-size: 3rem;
+}
+
+.Orthogard .titulo .nombre h1 b {
+  font-family: "Bold";
+}
+
+.Orthogard .front {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .Orthogard .information {
   width: 50%;
-  height: 90vh;
+  height: min-content;
   text-align: center;
   color: #008655;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* background: yellow; */
 }
 
 .Orthogard .information h1 {
@@ -32,14 +85,25 @@
   letter-spacing: 15px;
 }
 
+.Orthogard .bullets {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.Orthogard .bullets .imgBullets img {
+  width: 50px;
+}
+
 .Orthogard .btnAcction {
   width: 100%;
-  height: 80px;
+  height: 70px;
   margin: 1rem 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* background: wheat; */
 }
 
 .Orthogard .btnAcction .icon.circle {
@@ -48,10 +112,10 @@
 }
 
 .Orthogard .btnAcction button.btn {
-  width: 60px;
-  height: 60px;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  min-width: 60px;
+  min-height: 60px;
+  margin: 0 16px 0;
+  padding: 0;
   border: 2px solid #008655;
   background: none;
   border-radius: 10px;
@@ -61,8 +125,44 @@
   color: #008655;
 }
 
+.Orthogard .btnAcction button.btn span {
+  width: 100%;
+  text-align: center;
+}
+
+.Orthogard .ventajas-div {
+  height: max-content;
+  margin-top: 16px;
+  margin-left: 50px;
+  text-align: left;
+}
+
+.Orthogard .ventajas-div .content {
+  display: flex;
+  align-items: center;
+}
+
+.Orthogard .ventajas-div .content p {
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.Orthogard button.btn.ventajas {
+  width: min-content;
+  height: min-content;
+  /* margin: 16px 16px 0; */
+  padding: 10px 16px;
+  border: 2px solid #008655;
+  background: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Heavy";
+  color: #008655;
+}
+
 .Orthogard .btnAcction p {
-  width: 70%;
+  width: 100%;
   font-size: 1rem;
   text-align: left;
 }
@@ -77,8 +177,8 @@
 }
 
 .Orthogard .footer {
-  width: 60%;
-  height: 10vh;
+  width: 80%;
+  height: 5vh;
   text-align: center;
   margin: 0 auto;
   color: #757575;
@@ -86,7 +186,7 @@
 }
 
 .footer p {
-  font-size: .8rem;
+  font-size: 10px;
 }
 
 .vl {
@@ -106,7 +206,10 @@
   top: 24rem;
 }
 
-.OrthogardVideo .animation .animation-3d {
-  position: absolute !important;
-  top: 300vh;
+.Orthogard .animation {
+  width: 50%;
+}
+
+.Orthogard .animation .animation-3d canvas {
+  transform: translateX(-12rem) !important;
 }
